@@ -6,12 +6,20 @@ class TweetsController < ApplicationController
   def new
     @tweet = Tweet.new
   end
+  def confirm
+    @tweet = Tweet.new(tweet_params)
+    render :new if @tweet.invalid?
+  end
   def create
     @tweet = Tweet.new(tweet_params)
-    if @tweet.save
-      redirect_to tweets_path,notice: "投稿完了！"
+    if params[:back]
+      render :new
     else
-      render  :new
+      if @tweet.save
+        redirect_to tweets_path,notice: "投稿完了！"
+      else
+        render  :new
+      end
     end
   end
   def show
