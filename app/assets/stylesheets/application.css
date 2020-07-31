@@ -1,15 +1,70 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+  font-size: 62.5%;
+  height: 100%
+}
+body {
+  height: 100%;
+}
+.footer-position{
+  min-height: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  background-color: #A9E2F3;
+  border: solid;
+}
+.container{
+  margin: 0% 25% 0% 25%;
+  padding-bottom: 60px;
+}
+.header{
+  color: white;
+  font-size: 20px;
+  background-color: skyblue;
+  height:50px;
+  border: solid;
+}
+header .logo{
+  float: left;
+  margin-left: 80px;
+}
+.new-menu{
+  color: white;
+  text-decoration:none !important;
+  float: right;
+  margin-right: 80px;
+}
+h1{
+  color:white;
+}
+table{
+  background-color: white;
+  border:solid;
+  width: 100%;
+}
+tr .content-box{
+  width:70% !important;
+}
+div .content{
+  width:auto !important;
+  text-align: center;
+}
+tr .link{
+  width:20% !important;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background-color: skyblue;
+  height:50px;
+  border: solid;
+}
+.tweet_content input{
+  height:3rem;
+  width:50rem;
+}

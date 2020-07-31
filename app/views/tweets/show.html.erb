@@ -1,2 +1,6 @@
+<%= render 'header' %>
 <h1>ツイート詳細</h1>
-<p>内容: <%= @tweet.content %></p>
+<p>Content: <%= @tweet.content %></p>
+<%= link_to "編集", edit_tweet_path(@tweet.id) %>
+<%= link_to '削除', tweet_path(@tweet.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %>
+<%= render 'footer' %>
